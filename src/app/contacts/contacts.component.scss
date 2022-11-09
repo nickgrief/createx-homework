@@ -1,12 +1,8 @@
-body {
-  font-size: 16px;
-}
-
 header {
   display: flex;
   gap: 4rem;
   align-items: center;
-  padding: 0 15%;
+  padding: 0 calc(calc(100vw - 1230px) / 2);
 }
 
 header nav {
@@ -38,7 +34,7 @@ header .contacts-link {
 }
 
 main {
-  padding: 0 15%;
+  padding: 0 calc(calc(100vw - 1230px) / 2);
 }
 
 .contact {
@@ -152,15 +148,15 @@ footer {
 .footer-top {
   display: grid;
   gap: 80px;
-  padding: 80px 15% 60px;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+  padding: 80px calc(calc(100vw - 1230px) / 2) 60px calc(calc(100vw - 1230px) / 2);
 }
 
 .footer-bot {
   display: flex;
   justify-content: space-between;
-  padding: 0 15%;
   background-color: #ffffff0e;
+  padding: 0 calc(calc(100vw - 1230px) / 2);
   color: white;
 }
 
