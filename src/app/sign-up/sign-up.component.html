@@ -9,7 +9,7 @@
       studying.
     </p>
   </div>
-  <form class="sign-form">
+  <form class="form">
     <label for="full-name">Full Name</label>
     <input type="text" id="full-name" placeholder="Your full name" required />
     <label for="email">Email</label>
@@ -17,35 +17,43 @@
     <div class="sign-password-container">
       <label for="password">Password</label>
       <input
-        type="password"
+        [type]="isPasswordHidden ? 'password' : 'text'"
         id="password"
         placeholder="Your password"
         required
       />
-      <button type="button" class="button-show-password">
+      <button
+        type="button"
+        class="button-show-password"
+        (click)="switchPasswordVisibility()"
+      >
         <img src="assets/union.svg" alt="Show password icon" />
       </button>
     </div>
     <div class="sign-password-container">
       <label for="confirm-password">Confirm Password</label>
       <input
-        type="password"
+        [type]="isPasswordHidden ? 'password' : 'text'"
         id="confirm-password"
         placeholder="Your confirmation password"
         required
       />
-      <button type="button" class="button-show-password">
+      <button
+        type="button"
+        class="button-show-password"
+        (click)="switchPasswordVisibility()"
+      >
         <img src="assets/union.svg" alt="Show password icon" />
       </button>
     </div>
-    <div class="sign-form-checkbox-container">
+    <div class="form-checkbox-container">
       <label class="custom-checkbox-container" for="remember-me"
         >Remember me
         <input type="checkbox" name="Remember me" id="remember-me" checked />
-        <span class="sign-form-custom-checkmark"></span
+        <span class="form-custom-checkmark"></span
       ></label>
     </div>
-    <button class="sign-submit-button" type="submit">Sign up</button>
+    <button class="orange-button" type="submit">Sign up</button>
     <p>Already have an account? <a href="">Sign in</a></p>
   </form>
   <app-sign-footer></app-sign-footer>

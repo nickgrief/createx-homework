@@ -9,30 +9,34 @@
       registration.
     </p>
   </div>
-  <form class="sign-form">
+  <form class="form">
     <label for="email">Email</label>
     <input type="email" id="email" placeholder="Your working email" required />
     <div class="sign-password-container">
       <label for="password">Password</label>
       <input
-        type="password"
+        [type]="isPasswordHidden ? 'password' : 'text'"
         id="password"
         placeholder="Your password"
         required
       />
-      <button type="button" class="button-show-password">
+      <button
+        type="button"
+        class="button-show-password"
+        (click)="switchPasswordVisibility()"
+      >
         <img src="assets/union.svg" alt="Show password icon" />
       </button>
     </div>
-    <div class="sign-form-checkbox-container">
+    <div class="form-checkbox-container">
       <label class="custom-checkbox-container" for="keep-me"
         >Keep me signed in
         <input type="checkbox" name="Keep me signed in" id="keep-me" checked />
-        <span class="sign-form-custom-checkmark"></span
+        <span class="form-custom-checkmark"></span
       ></label>
       <a href="">Forgot your password?</a>
     </div>
-    <button class="sign-submit-button" type="submit">Sign in</button>
+    <button class="orange-button" type="submit">Sign in</button>
     <p>Don't have an account? <a href="">Sign up</a></p>
   </form>
   <app-sign-footer></app-sign-footer>

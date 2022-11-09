@@ -1,0 +1,246 @@
+body {
+  font-size: 16px;
+}
+
+header {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding: 0 15%;
+}
+
+header nav {
+  display: flex;
+  gap: 2rem;
+}
+
+header .orange-button {
+  margin: 0 0 0 auto;
+  width: 206px;
+  font-size: 16px;
+  height: 52px;
+}
+
+header .profile {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+header a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #424551;
+}
+
+header .contacts-link {
+  color: #ff3f3a;
+}
+
+main {
+  padding: 0 15%;
+}
+
+.contact {
+  margin: 128px 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.contact p {
+  margin: 0;
+}
+
+.header-small {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.header-big {
+  font-size: 46px;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.contact ul {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.contact li {
+  list-style: none;
+  display: flex;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.contact-list-left {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-list-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #787a80;
+}
+
+.contact-list-value {
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.contact-footer {
+  margin-top: 48px;
+}
+
+.contact-footer p {
+  margin: 0 0 24px 0;
+}
+
+.icon-row {
+  display: flex;
+  gap: 32px;
+}
+
+.icon-row img {
+  width: 24px;
+  height: 24px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+
+.form {
+  display: grid;
+  margin: 0;
+  gap: 25px;
+  grid-template: 86px 86px 1fr 52px / 1fr 1fr;
+}
+
+.form .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form .message {
+  grid-column: span 2;
+}
+
+.form .form-checkbox-container {
+  width: 90%;
+}
+
+footer {
+  margin-top: 180px;
+  color: white;
+  font-size: 16px;
+  background-color: #1e212c;
+}
+
+.footer-top {
+  display: grid;
+  gap: 80px;
+  padding: 80px 15% 60px;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+}
+
+.footer-bot {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15%;
+  background-color: #ffffff0e;
+  color: white;
+}
+
+.footer-bot div {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.footer-top .about {
+  font-size: 12px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 40px;
+  margin-top: 24px;
+}
+
+.footer-top li {
+  opacity: 60%;
+}
+
+.footer-top div h6 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer-top ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-top li {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer-top a {
+  text-decoration: none;
+  color: white;
+}
+
+.subscribe-container .email-info {
+  font-size: 10px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+.subscribe-container form {
+  position: relative;
+}
+
+.subscribe-container form button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0.25rem;
+  width: 32px;
+}
+
+.subscribe-container input {
+  margin-top: 24px;
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem;
+  font-size: 12px;
+  min-width: 250px;
+}
+
+.footer-bot button {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border: none;
+  font-weight: 700;
+  opacity: 60%;
+}

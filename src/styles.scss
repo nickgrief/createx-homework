@@ -3,6 +3,16 @@
   font-family: "Lato", sans-serif;
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-top: 32px;
+  margin: 0;
+}
+
 .button-close {
   border: none;
   background-color: white;
@@ -44,18 +54,18 @@
   color: #787a80;
 }
 
-.sign-form {
+.form {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
 }
 
-.sign-form label {
+.form label {
   margin-top: 20px;
   color: #424551;
 }
 
-.sign-form input {
+.form input {
   margin-top: 8px;
   border-radius: 4px;
   border-color: #d7dadd;
@@ -65,7 +75,17 @@
   padding: 0 1rem;
 }
 
-.sign-form-checkbox-container {
+.form textarea {
+  margin-top: 8px;
+  border-radius: 4px;
+  border-color: #d7dadd;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1rem 1rem;
+  resize: none;
+}
+
+.form-checkbox-container {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -74,7 +94,7 @@
   width: 100%;
 }
 
-.sign-form-checkbox-container label {
+.form-checkbox-container label {
   margin-top: 0;
 }
 
@@ -102,7 +122,7 @@
 }
 
 /* Create a custom checkbox */
-.sign-form-custom-checkmark {
+.form-custom-checkmark {
   position: absolute;
   top: 2px;
   left: 0;
@@ -113,29 +133,29 @@
 }
 
 /* On mouse-over, add a grey background color */
-.custom-checkbox-container:hover input ~ .sign-form-custom-checkmark {
+.custom-checkbox-container:hover input ~ .form-custom-checkmark {
   background-color: #ccc;
 }
 
 /* When the checkbox is checked, add a blue background */
-.custom-checkbox-container input:checked ~ .sign-form-custom-checkmark {
+.custom-checkbox-container input:checked ~ .form-custom-checkmark {
   background-color: #ff3f3a;
 }
 
-/* Create the sign-form-custom-checkmark/indicator (hidden when not checked) */
-.sign-form-custom-checkmark:after {
+/* Create the form-custom-checkmark/indicator (hidden when not checked) */
+.form-custom-checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the sign-form-custom-checkmark when checked */
-.custom-checkbox-container input:checked ~ .sign-form-custom-checkmark:after {
+/* Show the form-custom-checkmark when checked */
+.custom-checkbox-container input:checked ~ .form-custom-checkmark:after {
   display: block;
 }
 
-/* Style the sign-form-custom-checkmark/indicator */
-.custom-checkbox-container .sign-form-custom-checkmark:after {
+/* Style the form-custom-checkmark/indicator */
+.custom-checkbox-container .form-custom-checkmark:after {
   left: 5.3px;
   top: 1px;
   width: 4px;
@@ -151,7 +171,7 @@
   height: fit-content;
 }
 
-.sign-submit-button {
+.orange-button {
   height: 44px;
   margin-top: 24px;
   border-radius: 4px;
@@ -165,16 +185,16 @@
   transition-duration: 300ms;
 }
 
-.sign-submit-button:hover {
+.orange-button:hover {
   scale: 110%;
 }
 
-.sign-form p {
+.form p {
   margin-top: 24px;
   color: #424551;
 }
 
-a {
+form a {
   color: #ff3f3a;
   text-decoration: none;
 }
