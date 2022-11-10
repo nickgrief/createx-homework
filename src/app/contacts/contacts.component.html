@@ -56,12 +56,11 @@
         <div class="contact-footer">
           <p>FOLLOW US:</p>
           <div class="icon-row">
-            <img src="assets/facebook.svg" alt="Facebook icon" />
-            <img src="assets/twitter-dark.svg" alt="Twitter icon" />
-            <img src="assets/youtube.svg" alt="Youtube icon" />
-            <img src="assets/telegram.svg" alt="Telegram icon" />
-            <img src="assets/instagram.svg" alt="Intstagram icon" />
-            <img src="assets/linkedin.svg" alt="LinkedIn icon" />
+            <img
+              *ngFor="let icon of iconList"
+              [src]="icon.src"
+              [alt]="icon.alt"
+            />
           </div>
         </div>
       </div>
@@ -155,12 +154,11 @@
           in the largest companies in the country.
         </p>
         <div class="icon-row">
-          <img src="assets/facebook.svg" alt="Facebook icon" />
-          <img src="assets/twitter-dark.svg" alt="Twitter icon" />
-          <img src="assets/youtube.svg" alt="Youtube icon" />
-          <img src="assets/telegram.svg" alt="Telegram icon" />
-          <img src="assets/instagram.svg" alt="Intstagram icon" />
-          <img src="assets/linkedin.svg" alt="LinkedIn icon" />
+          <img
+            *ngFor="let icon of iconList.slice(0, 10)"
+            [src]="icon.src"
+            [alt]="icon.alt"
+          />
         </div>
       </div>
       <div>

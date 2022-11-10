@@ -103,7 +103,8 @@ main {
 
 .icon-row {
   display: flex;
-  gap: 32px;
+  width: 400px;
+  justify-content: space-between;
 }
 
 .icon-row img {
