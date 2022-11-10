@@ -58,8 +58,8 @@
           <div class="icon-row">
             <img
               *ngFor="let icon of iconList"
-              [src]="icon.src"
-              [alt]="icon.alt"
+              src="{{ icon.src }}"
+              alt="{{ icon.alt }}"
             />
           </div>
         </div>
@@ -156,8 +156,8 @@
         <div class="icon-row">
           <img
             *ngFor="let icon of iconList.slice(0, 10)"
-            [src]="icon.src"
-            [alt]="icon.alt"
+            src="{{ icon.src }}"
+            alt="{{ icon.alt }}"
           />
         </div>
       </div>
