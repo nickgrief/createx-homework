@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contacts.component.scss'],
 })
 export class ContactsComponent implements OnInit {
+  telephoneNumber = '(405) 555-0128';
+  telephoneLink = `tel:${this.telephoneNumber}`;
+
   mapState: ymaps.IMapState = {
     type: 'yandex#hybrid',
   };

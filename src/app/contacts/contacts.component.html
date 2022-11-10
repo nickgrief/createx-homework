@@ -38,7 +38,9 @@
             </div>
             <div class="contact-list-right">
               <p class="contact-list-name">Call us:</p>
-              <p class="contact-list-value">(405) 555-0128</p>
+              <a class="contact-list-value" [href]="telephoneLink">{{
+                telephoneNumber
+              }}</a>
             </div>
           </li>
           <li>
@@ -58,8 +60,8 @@
           <div class="icon-row">
             <img
               *ngFor="let icon of iconList"
-              src="{{ icon.src }}"
-              alt="{{ icon.alt }}"
+              [src]="icon.src"
+              [alt]="icon.alt"
             />
           </div>
         </div>
@@ -156,8 +158,8 @@
         <div class="icon-row">
           <img
             *ngFor="let icon of iconList.slice(0, 10)"
-            src="{{ icon.src }}"
-            alt="{{ icon.alt }}"
+            [src]="icon.src"
+            [alt]="icon.alt"
           />
         </div>
       </div>
@@ -190,7 +192,7 @@
         <ul>
           <li>
             <img src="assets/phone-light.svg" alt="Phone icon" />
-            <span>(405) 555-0128</span>
+            <a [href]="telephoneLink">{{ telephoneNumber }}</a>
           </li>
           <li>
             <img src="assets/mail.svg" alt="Mail icon" />
