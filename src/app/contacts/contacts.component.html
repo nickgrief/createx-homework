@@ -65,8 +65,14 @@
           </div>
         </div>
       </div>
-      <div class="contact-right">
-        <img src="assets/map.png" alt="Map image" />
+      <div id="map">
+        <ya-map
+          [center]="[40.222196, -74.764481]"
+          [zoom]="14"
+          [state]="mapState"
+        >
+          <ya-placemark [geometry]="[40.222196, -74.764481]"></ya-placemark>
+        </ya-map>
       </div>
     </div>
     <div class="question">
@@ -200,7 +206,7 @@
           <input
             type="email"
             name="E-mail"
-            id="email"
+            id="email-send"
             placeholder="Email adress"
             required
           />

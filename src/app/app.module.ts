@@ -8,19 +8,28 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignFooterComponent } from './sign-footer/sign-footer.component';
 
+import { AngularYandexMapsModule, YaConfig } from 'angular8-yandex-maps';
+
+const mapConfig: YaConfig = {
+  apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
+  lang: 'ru_RU',
+  mode: 'debug',
+};
+
 @NgModule({
   declarations: [
     AppComponent,
     ContactsComponent,
     SignInComponent,
     SignUpComponent,
-    SignFooterComponent
+    SignFooterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularYandexMapsModule.forRoot(mapConfig),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
