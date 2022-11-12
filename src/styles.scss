@@ -43,46 +43,56 @@ body {
   text-align: center;
   padding: 0 1rem;
   margin: 0 10%;
-}
 
-.sign-header h1 {
-  margin-top: 44px;
-}
+  h1 {
+    margin-top: 44px;
+  }
 
-.sign-header p {
-  margin: 24px 0 4px 0;
-  color: #787a80;
+  p {
+    margin: 24px 0 4px 0;
+    color: #787a80;
+  }
 }
 
 .form {
   display: flex;
   flex-direction: column;
   margin: 0 10%;
-}
 
-.form label {
-  margin-top: 20px;
-  color: #424551;
-}
+  label {
+    margin-top: 20px;
+    color: #424551;
+  }
 
-.form input {
-  margin-top: 8px;
-  border-radius: 4px;
-  border-color: #d7dadd;
-  border-width: 1px;
-  border-style: solid;
-  height: 44px;
-  padding: 0 1rem;
-}
+  input {
+    margin-top: 8px;
+    border-radius: 4px;
+    border-color: #d7dadd;
+    border-width: 1px;
+    border-style: solid;
+    height: 44px;
+    padding: 0 1rem;
+  }
 
-.form textarea {
-  margin-top: 8px;
-  border-radius: 4px;
-  border-color: #d7dadd;
-  border-width: 1px;
-  border-style: solid;
-  padding: 1rem 1rem;
-  resize: none;
+  textarea {
+    margin-top: 8px;
+    border-radius: 4px;
+    border-color: #d7dadd;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1rem 1rem;
+    resize: none;
+  }
+
+  p {
+    margin-top: 24px;
+    color: #424551;
+  }
+
+  a {
+    color: #ff3f3a;
+    text-decoration: none;
+  }
 }
 
 .form-checkbox-container {
@@ -92,10 +102,10 @@ body {
   justify-content: space-between;
   height: fit-content;
   width: 100%;
-}
 
-.form-checkbox-container label {
-  margin-top: 0;
+  label {
+    margin-top: 0;
+  }
 }
 
 // Code for custom checkmark was taken from https: //www.w3schools.com/howto/howto_css_custom_checkbox.asp
@@ -110,15 +120,14 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
 
-/* Hide the browser's default checkbox */
-.custom-checkbox-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
 }
 
 /* Create a custom checkbox */
@@ -183,20 +192,10 @@ body {
   line-height: 44px;
   transition: all;
   transition-duration: 300ms;
-}
 
-.orange-button:hover {
-  scale: 110%;
-}
-
-.form p {
-  margin-top: 24px;
-  color: #424551;
-}
-
-form a {
-  color: #ff3f3a;
-  text-decoration: none;
+  &:hover {
+    scale: 110%;
+  }
 }
 
 .sign-password-container {
