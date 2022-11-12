@@ -107,6 +107,19 @@ main {
   img {
     width: 24px;
     height: 24px;
+    transition: all 300ms;
+
+    &:hover {
+      scale: 150%;
+    }
+
+    &:nth-child(odd):hover {
+      rotate: 360deg;
+    }
+
+    &:nth-child(even):hover {
+      rotate: -360deg;
+    }
   }
 }
 

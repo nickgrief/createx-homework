@@ -58,11 +58,9 @@
         <div class="contact-footer">
           <p>FOLLOW US:</p>
           <div class="icon-row">
-            <img
-              *ngFor="let icon of iconList"
-              [src]="icon.src"
-              [alt]="icon.alt"
-            />
+            <a href="" *ngFor="let icon of iconList.slice(0, 10)"
+              ><img [src]="icon.src" [alt]="icon.alt" />
+            </a>
           </div>
         </div>
       </div>
@@ -156,11 +154,9 @@
           in the largest companies in the country.
         </p>
         <div class="icon-row">
-          <img
-            *ngFor="let icon of iconList.slice(0, 10)"
-            [src]="icon.src"
-            [alt]="icon.alt"
-          />
+          <a href="" *ngFor="let icon of iconList.slice(0, 10)"
+            ><img [src]="icon.src" [alt]="icon.alt" />
+          </a>
         </div>
       </div>
       <div>

@@ -1,10 +1,8 @@
 <div class="container">
   <p>Or sign in with</p>
   <div class="icons-container">
-    <img
-      *ngFor="let icon of iconList.slice(0, 10)"
-      [src]="icon.src"
-      [alt]="icon.alt"
-    />
+    <a href="" *ngFor="let icon of iconList.slice(0, 10)"
+      ><img [src]="icon.src" [alt]="icon.alt" />
+    </a>
   </div>
 </div>
