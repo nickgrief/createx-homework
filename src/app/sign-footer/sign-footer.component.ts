@@ -16,7 +16,7 @@ export class SignFooterComponent implements OnInit {
       alt: 'Google icon',
     },
     {
-      src: 'assets/twitter.svg',
+      src: 'assets/twitter-dark.svg',
       alt: 'Twitter icon',
     },
     {
