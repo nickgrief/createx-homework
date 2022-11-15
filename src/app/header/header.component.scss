@@ -1,0 +1,32 @@
+header {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  font-size: 16px;
+  padding: 0 calc(calc(100vw - 1230px) / 2);
+
+  nav {
+    display: flex;
+    gap: 2rem;
+  }
+  .orange-button {
+    margin: 0 0 0 auto;
+    width: 206px;
+    font-size: 16px;
+    height: 52px;
+  }
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #424551;
+
+    &:hover {
+      color: #ff3f3a;
+    }
+  }
+}

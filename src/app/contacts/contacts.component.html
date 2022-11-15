@@ -1,22 +1,5 @@
 <div class="component-container">
-  <header>
-    <div>
-      <img src="assets/create.svg" alt="Create logo" />
-      <img src="assets/x.svg" alt="X logo" />
-    </div>
-    <nav>
-      <a href="">About Us</a>
-      <a href="">Courses</a>
-      <a href="">Events</a>
-      <a href="">Blog</a>
-      <a href="">Contacts</a>
-    </nav>
-    <button class="orange-button">Get consultation</button>
-    <div class="profile">
-      <img src="assets/profile.svg" alt="Profile icon" />
-      <span><a href="">Log in</a> / <a href="">Register</a></span>
-    </div>
-  </header>
+  <app-header></app-header>
   <main>
     <div class="contact">
       <div class="contact-left">
@@ -142,89 +125,5 @@
       </div>
     </div>
   </main>
-  <footer>
-    <div class="footer-top">
-      <div>
-        <div>
-          <img src="assets/create-light.svg" alt="Create logo" />
-          <img src="assets/x.svg" alt="X logo" />
-        </div>
-        <p class="about">
-          Createx Online School is a leader in online studying. We have lots
-          of courses and programs from the main market experts. We provide
-          relevant approaches to online learning, internships and employment
-          in the largest companies in the country.
-        </p>
-        <div class="icon-row">
-          <a href="" *ngFor="let icon of iconList.slice(0, 10)"
-            ><img [src]="icon.src" [alt]="icon.alt" />
-          </a>
-        </div>
-      </div>
-      <div>
-        <h6>SITE MAP</h6>
-        <nav>
-          <ul>
-            <li><a href="">About Us</a></li>
-            <li><a href="">Courses</a></li>
-            <li><a href="">Events</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contacts</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <h6>COURSES</h6>
-        <nav>
-          <ul>
-            <li><a href="">Marketing</a></li>
-            <li><a href="">Management</a></li>
-            <li><a href="">HR & Recruting</a></li>
-            <li><a href="">Design</a></li>
-            <li><a href="">Development</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <h6>CONTACT US</h6>
-        <ul>
-          <li>
-            <img src="assets/phone-light.svg" alt="Phone icon" />
-            <a [href]="telephoneLink">{{ telephoneNumber }}</a>
-          </li>
-          <li>
-            <img src="assets/mail.svg" alt="Mail icon" />
-            <a href="mailto:hello@createx.com">hello@createx.com</a>
-          </li>
-        </ul>
-      </div>
-      <div class="subscribe-container">
-        <h6>SIGN UP TO OUR NEWSLETTER</h6>
-        <form>
-          <input
-            type="email"
-            name="E-mail"
-            id="email-send"
-            placeholder="Email adress"
-            required
-          />
-          <button type="submit" class="button-send-email">
-            <img src="assets/right-arrow.svg" alt="Right arrow icon" />
-          </button>
-        </form>
-        <p class="email-info">
-          *Subscribe to our newsletter to receive communications and early
-          updates from Createx SEO Agency.
-        </p>
-      </div>
-    </div>
-    <div class="footer-bot">
-      <div>
-        <p>© All rights reserved. Made with</p>
-        <img src="assets/heart.svg" alt="Heart icon" />
-        <p>by Createx Studio</p>
-      </div>
-      <button type="button">GO TO TOP</button>
-    </div>
-  </footer>
+  <app-footer></app-footer>
 </div>
