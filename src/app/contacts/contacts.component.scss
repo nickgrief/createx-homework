@@ -23,9 +23,10 @@ header {
     font-weight: 700;
     text-decoration: none;
     color: #424551;
-  }
-  .contacts-link {
-    color: #ff3f3a;
+
+    &:hover {
+      color: #ff3f3a;
+    }
   }
 }
 
@@ -182,6 +183,10 @@ footer {
 
   li {
     opacity: 60%;
+
+    &:hover {
+      opacity: 100%;
+    }
   }
 
   div h6 {
@@ -189,6 +194,7 @@ footer {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
+    font-family: "Lato", sans-serif;
   }
 
   ul {
@@ -221,6 +227,13 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.2rem;
+
+    padding: 0.5rem 0;
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   button {
@@ -237,6 +250,7 @@ footer {
     font-size: 10px;
     line-height: 15px;
     font-weight: 400;
+    margin-top: 12px;
   }
 
   form {
