@@ -9,6 +9,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignFooterComponent } from './sign-footer/sign-footer.component';
 
 import { AngularYandexMapsModule, YaConfig } from 'angular8-yandex-maps';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const mapConfig: YaConfig = {
   apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
@@ -28,6 +29,7 @@ const mapConfig: YaConfig = {
     BrowserModule,
     AppRoutingModule,
     AngularYandexMapsModule.forRoot(mapConfig),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
