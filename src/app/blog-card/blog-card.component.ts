@@ -9,7 +9,7 @@ export class BlogCardComponent implements OnInit {
   @Input() typeIcon = 'mic';
   @Input() typeName = 'Podcast';
 
-  @Input() imageSrc = '/assets/blog1.png';
+  @Input() imageSrc = 'assets/blog1.png';
   @Input() imageAlt = 'Image of a snail racing';
 
   @Input() category = 'Design';
