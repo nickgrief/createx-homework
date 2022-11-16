@@ -1,6 +1,8 @@
 # Createx
 
-## [Ссылка на сайт](https://nickgrief.github.io/createx-homework)
+## [Ссылка на сайт (страница /contacts)](https://nickgrief.github.io/createx-homework)
+
+## [Ссылка на страницу /single-post](https://nickgrief.github.io/createx-homework/single-post)
 
 ### Дз №2
 
