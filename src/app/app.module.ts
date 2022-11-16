@@ -20,6 +20,7 @@ import { SinglePostComponent } from './single-post/single-post.component';
 import { ArticleComponent } from './article/article.component';
 import { IconListComponent } from './icon-list/icon-list.component';
 import { DimDirective } from './dim.directive';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const mapConfig: YaConfig = {
   apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
@@ -40,6 +41,7 @@ const mapConfig: YaConfig = {
     ArticleComponent,
     IconListComponent,
     DimDirective,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

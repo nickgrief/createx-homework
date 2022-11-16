@@ -1,0 +1,5 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 calc(calc(100vw - 1230px) / 2);
+}

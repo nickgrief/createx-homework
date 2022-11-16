@@ -124,15 +124,27 @@ footer {
     .tag {
       color: #787a80;
       font-size: 14px;
+      font-weight: 700;
       padding: 5.5px 16px;
+
+      width: fit-content;
 
       border: 1px solid #d7dadd;
       border-radius: 4px;
+
+      text-decoration: none;
+
+      &:hover {
+        background-color: #ff3f3a;
+        color: white;
+      }
     }
   }
 }
 
 .share {
+  display: flex;
+  gap: 12px;
   color: #1e212c;
   font-weight: 700;
 }

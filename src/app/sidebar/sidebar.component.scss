@@ -1,0 +1,133 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  width: 340px;
+  margin-top: 80px;
+
+  .search-bar {
+    height: 44px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    a {
+      text-decoration: none;
+      transition: scale 200ms;
+
+      &:hover {
+        scale: 115%;
+      }
+    }
+
+    h2 {
+      font-weight: 700;
+      font-size: 16px;
+      color: #1e212c;
+      margin: 0;
+    }
+
+    h3 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 25.6px;
+      color: #1e212c;
+    }
+
+    mat-card {
+      height: 100px;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    img {
+      padding: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    .date {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 9px;
+
+      color: #787a80;
+
+      mat-icon {
+        transform: scale(0.85);
+        color: #787a80;
+      }
+    }
+
+    &__right-side {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__icon-list-container {
+      width: 32px;
+    }
+
+    &__about {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      mat-card-title {
+        font-weight: 700;
+        font-size: 20px;
+        color: #424551;
+      }
+
+      mat-card-subtitle {
+        font-size: 14px;
+        color: #787a80;
+      }
+    }
+  }
+
+  .tags {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 16px;
+      color: #1e212c;
+      margin: 0;
+    }
+
+    &__container {
+      display: flex;
+      gap: 12px;
+
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      color: #787a80;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 5.5px 16px;
+
+      width: fit-content;
+
+      border: 1px solid #d7dadd;
+      border-radius: 4px;
+
+      text-decoration: none;
+
+      &:hover {
+        background-color: #ff3f3a;
+        color: white;
+      }
+    }
+  }
+}

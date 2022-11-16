@@ -1,0 +1,94 @@
+<aside>
+  <mat-form-field class="search-bar" appearance="outline">
+    <mat-label>Search blog...</mat-label>
+    <input type="text" matInput />
+    <mat-icon color="primary" matSuffix>search</mat-icon>
+  </mat-form-field>
+
+  <div class="card">
+    <h2>AUTHOR</h2>
+    <a href="">
+      <mat-card class="mat-elevation-z0">
+        <img
+          mat-card-md-image
+          src="/assets/author.png"
+          alt="Photo of Kristin Watson"
+        />
+        <div class="card__right-side">
+          <div class="card__about">
+            <mat-card-title>Kristin Watson </mat-card-title>
+            <mat-card-subtitle>Curator of Marketing Course</mat-card-subtitle>
+          </div>
+          <div class="card__icon-list-container">
+            <app-icon-list [iconList]="iconList" color="gray"></app-icon-list>
+          </div>
+        </div>
+      </mat-card>
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>TRENDING ARTICLES</h2>
+    <a href="">
+      <mat-card class="mat-elevation-z0">
+        <img
+          mat-card-md-image
+          src="/assets/side1.png"
+          alt="Photo of Kristin Watson"
+        />
+        <div class="card__right-side">
+          <div class="date">
+            <mat-icon color="primary">calendar_today</mat-icon>
+            <span>September 4, 2020</span>
+          </div>
+          <h3>What is traffic arbitrage and does it really make money?</h3>
+        </div>
+      </mat-card>
+    </a>
+    <a href="">
+      <mat-card class="mat-elevation-z0">
+        <img
+          mat-card-md-image
+          src="/assets/side2.png"
+          alt="Photo of Kristin Watson"
+        />
+        <div class="card__right-side">
+          <div class="date">
+            <mat-icon color="primary">calendar_today</mat-icon>
+            <span>July 15, 2020</span>
+          </div>
+          <h3>
+            Startup: how to build a team that will live longer than a year
+          </h3>
+        </div>
+      </mat-card> </a
+    ><a href="">
+      <mat-card class="mat-elevation-z0">
+        <img
+          mat-card-md-image
+          src="/assets/side3.png"
+          alt="Photo of Kristin Watson"
+        />
+        <div class="card__right-side">
+          <div class="date">
+            <mat-icon color="primary">calendar_today</mat-icon>
+            <span>August 2, 2020</span>
+          </div>
+          <h3>What to do if you want to get feedback on the product</h3>
+        </div>
+      </mat-card>
+    </a>
+  </div>
+
+  <div class="tags">
+    <h2>TAGS</h2>
+    <div class="tags__container">
+      <a href="" class="tag">#marketing</a>
+      <a href="" class="tag">#recruiting</a>
+      <a href="" class="tag">#coding</a>
+      <a href="" class="tag">#learning</a>
+      <a href="" class="tag">#HR</a>
+      <a href="" class="tag">#self-development</a>
+    </div>
+  </div>
+</aside>
