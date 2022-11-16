@@ -1,0 +1,51 @@
+.icon-list {
+  display: flex;
+  max-width: 300px;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  a {
+    width: 24px;
+    height: 24px;
+    transition: scale 150ms, rotate 500ms;
+
+    &:hover {
+      scale: 200%;
+    }
+
+    &:nth-child(odd):hover {
+      rotate: 360deg;
+    }
+
+    &:nth-child(even):hover {
+      rotate: -360deg;
+    }
+  }
+}
+
+.white {
+  color: white;
+
+  &:hover {
+    color: #ff3f3a;
+  }
+}
+
+.gray {
+  color: #787a80;
+
+  &:hover {
+    color: #ff3f3a;
+  }
+}
+
+.dim {
+  color: white;
+  opacity: 60%;
+
+  &:hover {
+    color: #ff3f3a;
+    opacity: 100%;
+  }
+}

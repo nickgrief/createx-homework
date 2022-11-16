@@ -7,8 +7,18 @@
     <a href="">About Us</a>
     <a href="">Courses</a>
     <a href="">Events</a>
-    <a href="">Blog</a>
-    <a href="">Contacts</a>
+    <a
+      [ngClass]="{ 'active-route': currentRoute === '/single-post' }"
+      routerLink="/single-post"
+      routerLinkActive="active"
+      >Blog</a
+    >
+    <a
+      [ngClass]="{ 'active-route': currentRoute === '/contacts' }"
+      routerLink="/contacts"
+      routerLinkActive="active"
+      >Contacts</a
+    >
   </nav>
   <button class="orange-button">Get consultation</button>
   <div class="profile">

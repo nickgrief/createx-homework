@@ -28,5 +28,9 @@ header {
     &:hover {
       color: #ff3f3a;
     }
+
+    &.active-route {
+      color: #ff3f3a;
+    }
   }
 }

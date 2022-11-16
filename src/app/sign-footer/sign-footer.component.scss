@@ -11,32 +11,6 @@
   border-top: 1px solid #e5e8ed;
 }
 
-.icons-container {
-  display: flex;
-  width: 150px;
-  justify-content: space-between;
-
-  a {
-    width: 24px;
-    height: 24px;
-    transition: scale 150ms, rotate 500ms;
-
-    &:hover {
-      scale: 200%;
-      filter: brightness(0) saturate(100%) invert(37%) sepia(67%) saturate(2739%) hue-rotate(339deg) brightness(105%)
-        contrast(103%);
-    }
-
-    &:nth-child(odd):hover {
-      rotate: 360deg;
-    }
-
-    &:nth-child(even):hover {
-      rotate: -360deg;
-    }
-  }
-}
-
 p {
   margin: 0;
 }

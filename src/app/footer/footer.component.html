@@ -11,11 +11,7 @@
         relevant approaches to online learning, internships and employment
         in the largest companies in the country.
       </p>
-      <div class="icon-row">
-        <a href="" *ngFor="let icon of iconList.slice(0, 10)"
-          ><img [src]="icon.src" [alt]="icon.alt" />
-        </a>
-      </div>
+      <app-icon-list [iconList]="iconList" color="dim"></app-icon-list>
     </div>
     <div>
       <h6>SITE MAP</h6>

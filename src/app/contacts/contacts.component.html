@@ -1,5 +1,4 @@
 <div class="component-container">
-  <app-header></app-header>
   <main>
     <div class="contact">
       <div class="contact-left">
@@ -42,11 +41,7 @@
         </ul>
         <div class="contact-footer">
           <p>FOLLOW US:</p>
-          <div class="icon-row">
-            <a href="" *ngFor="let icon of iconList.slice(0, 10)"
-              ><img [src]="icon.src" [alt]="icon.alt" />
-            </a>
-          </div>
+          <app-icon-list [iconList]="iconList" color="gray"></app-icon-list>
         </div>
       </div>
       <div id="map">
@@ -125,5 +120,4 @@
       </div>
     </div>
   </main>
-  <app-footer></app-footer>
 </div>

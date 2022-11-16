@@ -10,30 +10,13 @@ export class FooterComponent implements OnInit {
   telephoneLink = `tel:${this.telephoneNumber}`;
 
   iconList = [
-    {
-      src: 'assets/facebook.svg',
-      alt: 'Facebook icon',
-    },
-    {
-      src: 'assets/twitter-dark.svg',
-      alt: 'Twitter icon',
-    },
-    {
-      src: 'assets/youtube.svg',
-      alt: 'Youtube icon',
-    },
-    {
-      src: 'assets/telegram.svg',
-      alt: 'Telegram icon',
-    },
-    {
-      src: 'assets/instagram.svg',
-      alt: 'Instagram icon',
-    },
-    {
-      src: 'assets/linkedin.svg',
-      alt: 'LinkedIn icon',
-    },
+    'facebook',
+    'twitter',
+    'youtube',
+    'telegram',
+    'instagram',
+    'linkedin',
+    'google',
   ];
 
   constructor() {}

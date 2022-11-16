@@ -1,8 +1,4 @@
 <div class="container">
   <p>Or sign in with</p>
-  <div class="icons-container">
-    <a href="" *ngFor="let icon of iconList.slice(0, 10)"
-      ><img [src]="icon.src" [alt]="icon.alt" />
-    </a>
-  </div>
+  <app-icon-list [iconList]="iconList" color="gray"></app-icon-list>
 </div>

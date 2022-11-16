@@ -6,24 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-footer.component.scss'],
 })
 export class SignFooterComponent implements OnInit {
-  iconList = [
-    {
-      src: 'assets/facebook.svg',
-      alt: 'Facebook icon',
-    },
-    {
-      src: 'assets/google.svg',
-      alt: 'Google icon',
-    },
-    {
-      src: 'assets/twitter-dark.svg',
-      alt: 'Twitter icon',
-    },
-    {
-      src: 'assets/linkedin.svg',
-      alt: 'LinkedIn icon',
-    },
-  ];
+  iconList = ['facebook', 'google', 'twitter', 'linkedin'];
 
   constructor() {}
 
