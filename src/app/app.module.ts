@@ -21,6 +21,11 @@ import { ArticleComponent } from './article/article.component';
 import { IconListComponent } from './icon-list/icon-list.component';
 import { DimDirective } from './dim.directive';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { SubscribeBannerComponent } from './subscribe-banner/subscribe-banner.component';
+import { OurBlogComponent } from './our-blog/our-blog.component';
+import { BlogCardComponent } from './blog-card/blog-card.component';
+
+
 
 const mapConfig: YaConfig = {
   apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
@@ -42,6 +47,9 @@ const mapConfig: YaConfig = {
     IconListComponent,
     DimDirective,
     SidebarComponent,
+    SubscribeBannerComponent,
+    OurBlogComponent,
+    BlogCardComponent,
   ],
   imports: [
     BrowserModule,

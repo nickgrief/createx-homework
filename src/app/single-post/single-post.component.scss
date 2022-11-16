@@ -1,5 +1,11 @@
-.container {
+.top-part {
   display: flex;
   justify-content: space-between;
   padding: 0 calc(calc(100vw - 1230px) / 2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
 }

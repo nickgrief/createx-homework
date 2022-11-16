@@ -19,6 +19,19 @@ header {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+
+    button {
+      font-weight: 700;
+      text-decoration: none;
+      color: #424551;
+
+      background-color: white;
+      border: none;
+
+      &:hover {
+        color: #ff3f3a;
+      }
+    }
   }
   a {
     font-weight: 700;

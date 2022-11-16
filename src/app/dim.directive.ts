@@ -4,7 +4,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
   selector: '[colorful]',
 })
 export class DimDirective {
-  effect = 'grayscale(1) blur(4px)';
+  effect = 'grayscale(1) blur(2px)';
 
   constructor(private el: ElementRef<HTMLButtonElement>) {
     this.el.nativeElement.style.filter = this.effect;

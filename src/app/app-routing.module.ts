@@ -6,8 +6,7 @@ import { SinglePostComponent } from './single-post/single-post.component';
 const routes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'single-post', component: SinglePostComponent },
-  { path: '', redirectTo: '/contacts', pathMatch: 'full' },
-  { path: '**', component: ContactsComponent },
+  { path: '**', redirectTo: '/contacts', pathMatch: 'full' },
 ];
 
 @NgModule({
