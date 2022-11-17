@@ -3,7 +3,7 @@ import { Directive, ElementRef, HostListener } from '@angular/core';
 @Directive({
   selector: '[colorful]',
 })
-export class DimDirective {
+export class ColorfulDirective {
   effect = 'grayscale(1) blur(2px)';
 
   constructor(private el: ElementRef<HTMLButtonElement>) {

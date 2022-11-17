@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   gap: 160px;
-
   background-color: #f4f5f6;
 }
 
@@ -20,36 +19,20 @@
   .subscribe {
     display: flex;
     gap: 24px;
-
     align-items: center;
-
     height: 52px;
 
     .email {
       width: 422px;
       flex-shrink: 0;
-
-      ::ng-deep mat-label {
-        font-weight: 400;
-      }
     }
 
     button {
       height: 100%;
       width: 100%;
-
       font-weight: 700;
       font-size: 16px;
     }
-  }
-
-  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
-    background-color: white;
-    border-radius: 5px;
-  }
-
-  ::ng-deep .mat-form-field-wrapper {
-    padding: 0;
   }
 
   mat-checkbox {
@@ -57,4 +40,17 @@
     font-size: 16px;
     color: #424551;
   }
+}
+
+:host ::ng-deep mat-label {
+  font-weight: 400;
+}
+
+:host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: white;
+  border-radius: 5px;
+}
+
+:host ::ng-deep .mat-form-field-wrapper {
+  padding: 0;
 }

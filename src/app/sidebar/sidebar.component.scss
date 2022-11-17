@@ -55,7 +55,6 @@ aside {
       justify-content: flex-start;
       align-items: center;
       gap: 9px;
-
       color: #787a80;
 
       mat-icon {
@@ -107,7 +106,6 @@ aside {
     &__container {
       display: flex;
       gap: 12px;
-
       flex-wrap: wrap;
     }
 
@@ -116,12 +114,9 @@ aside {
       font-size: 14px;
       font-weight: 700;
       padding: 5.5px 16px;
-
       width: fit-content;
-
       border: 1px solid #d7dadd;
       border-radius: 4px;
-
       text-decoration: none;
 
       &:hover {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IconsService } from '../icons.service';
+import { IconsService } from '../services/icons.service';
 
 @Component({
   selector: 'app-contacts',
