@@ -7,25 +7,17 @@
     <a href="">About Us</a>
     <a href="">Courses</a>
     <a href="">Events</a>
-    <a
-      [ngClass]="{ 'active-route': currentRoute === '/single-post' }"
-      routerLink="/single-post"
-      routerLinkActive="active"
-      >Blog</a
-    >
-    <a
-      [ngClass]="{ 'active-route': currentRoute === '/contacts' }"
-      routerLink="/contacts"
-      routerLinkActive="active"
-      >Contacts</a
-    >
+    <a [ngClass]="{ 'active-route': currentRoute === '/single-post' }" routerLink="/single-post"
+      routerLinkActive="active">Blog</a>
+    <a [ngClass]="{ 'active-route': currentRoute === '/contacts' }" routerLink="/contacts"
+      routerLinkActive="active">Contacts</a>
+    <a [ngClass]="{ 'active-route': currentRoute === '/charts' }" routerLink="/charts"
+      routerLinkActive="active">Charts</a>
   </nav>
   <button class="orange-button">Get consultation</button>
   <div class="profile">
     <img src="assets/profile.svg" alt="Profile icon" />
-    <span
-      ><button (click)="openSignIn()">Log in</button> /
-      <button (click)="openSignUp()">Register</button></span
-    >
+    <span><button (click)="openSignIn()">Log in</button> /
+      <button (click)="openSignUp()">Register</button></span>
   </div>
 </header>
