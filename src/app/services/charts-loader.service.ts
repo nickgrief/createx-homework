@@ -81,18 +81,22 @@ export class ChartsLoaderService {
         label: "Orders",
         data: [],
         backgroundColor: "#003f5c",
+        borderColor: "#003f5c",
       }, <OfficeChartDataset>{
         label: "New",
         data: [],
         backgroundColor: "#7a5195",
+        borderColor: "#7a5195",
       }, <OfficeChartDataset>{
         label: "Delivered",
         data: [],
         backgroundColor: "#ef5675",
+        borderColor: "#ef5675",
       }, <OfficeChartDataset>{
         label: "Returned",
         data: [],
         backgroundColor: "#ffa600",
+        borderColor: "#ffa600",
       }]
 
     })))
@@ -109,18 +113,22 @@ export class ChartsLoaderService {
             label: "Orders",
             data: [String(curr.qty_orders)],
             backgroundColor: "#003f5c",
+            borderColor: "#003f5c",
           }, <OfficeChartDataset>{
             label: "New",
             data: [String(curr.qty_new)],
             backgroundColor: "#7a5195",
+            borderColor: "#7a5195",
           }, <OfficeChartDataset>{
             label: "Delivered",
             data: [String(curr.qty_delivered)],
             backgroundColor: "#ef5675",
+            borderColor: "#ef5675",
           }, <OfficeChartDataset>{
             label: "Returned",
             data: [String(curr.qty_return)],
             backgroundColor: "#ffa600",
+            borderColor: "#ffa600",
           }]
         });
       } else {
@@ -133,18 +141,22 @@ export class ChartsLoaderService {
             label: previousData.datasets[0].label,
             data: [...previousData.datasets[0].data, String(curr.qty_orders)],
             backgroundColor: previousData.datasets[0].backgroundColor,
+            borderColor: previousData.datasets[0].backgroundColor,
           }, <OfficeChartDataset>{
             label: previousData.datasets[1].label,
             data: [...previousData.datasets[1].data, String(curr.qty_new)],
             backgroundColor: previousData.datasets[1].backgroundColor,
+            borderColor: previousData.datasets[1].backgroundColor,
           }, <OfficeChartDataset>{
             label: previousData.datasets[2].label,
             data: [...previousData.datasets[2].data, String(curr.qty_delivered)],
             backgroundColor: previousData.datasets[2].backgroundColor,
+            borderColor: previousData.datasets[2].backgroundColor,
           }, <OfficeChartDataset>{
             label: previousData.datasets[3].label,
             data: [...previousData.datasets[3].data, String(curr.qty_return)],
             backgroundColor: previousData.datasets[3].backgroundColor,
+            borderColor: previousData.datasets[3].backgroundColor,
           }]
         });
       }

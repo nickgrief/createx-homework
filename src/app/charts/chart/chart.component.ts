@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
-import { Chart } from 'chart.js/auto';
+import { Chart, ChartOptions, ChartConfiguration } from 'chart.js/auto';
 import { OfficeChartData } from 'src/app/services/charts-loader.service';
 
 @Component({
@@ -26,7 +26,24 @@ export class ChartComponent implements AfterViewInit {
         datasets: [...chartData.datasets],
       },
 
+      options: {
+        elements: {
+          point: {
+            pointStyle: "line",
+          },
+          line: {
+            tension: 0.25,
+          }
+        }
+      }
     });
+  }
+
+  chartConfig = <ChartConfiguration>{
+    type: 'line',
+    options: <ChartOptions>{
+      color: "red",
+    }
   }
 
   constructor() { }
