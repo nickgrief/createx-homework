@@ -13,6 +13,8 @@ export class ChartComponent implements AfterViewInit {
 
   @ViewChild('myCanvas') myCanvas!: ElementRef;
 
+  fullscreen = false;
+
   public chart!: Chart<"line", string[]>;
 
   createChart(chartData: OfficeChartData) {

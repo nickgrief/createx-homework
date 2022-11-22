@@ -1,4 +1,5 @@
-<div>
+<div [ngClass]="{'fullscreen' : fullscreen}">
   <h1>{{chartData.names.values().next().value}}</h1>
+  <button type="button" (click)="fullscreen = !fullscreen">Fullscreen</button>
   <canvas #myCanvas>{{ chart }}</canvas>
 </div>

@@ -3,3 +3,22 @@ div {
   height: 400px;
   margin:32px;
 }
+
+.fullscreen {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 200;
+  background-color: white;
+  margin: 0;
+  padding: 12px 32px 64px;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+
+  canvas {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+  }
+}
