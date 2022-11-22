@@ -1,0 +1,11 @@
+<header>
+  <h1>Charts</h1>
+  <h2>Page: {{page}}</h2>
+  <button type="button" (click)="previous()" [disabled]="firstPage || sumChart">Previous</button>
+  <button type="button" (click)="next()" [disabled]="lastPage || sumChart">Next</button>
+  <button type="button" (click)="showAllCharts()" [disabled]="!sumChart">All Charts</button>
+  <button type="button" (click)="showSumChart()" [disabled]="sumChart">Summ Chart</button>
+</header>
+<main>
+  <app-chart-page [chartsNum]="chartsNum" [page]="page" [sumChart]="sumChart"></app-chart-page>
+</main>
