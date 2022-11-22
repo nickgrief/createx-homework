@@ -26,6 +26,7 @@ import { OurBlogComponent } from './our-blog/our-blog.component';
 import { BlogCardComponent } from './blog-card/blog-card.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ChartComponent } from './charts/chart/chart.component';
+import { ChartPageComponent } from './charts/chart-page/chart-page.component';
 
 const mapConfig: YaConfig = {
   apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
@@ -52,6 +53,7 @@ const mapConfig: YaConfig = {
     BlogCardComponent,
     ChartsComponent,
     ChartComponent,
+    ChartPageComponent,
   ],
   imports: [
     BrowserModule,
