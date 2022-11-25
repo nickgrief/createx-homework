@@ -3,6 +3,7 @@ import {
   Component,
   ElementRef,
   Input,
+  OnInit,
   ViewChild,
 } from '@angular/core';
 import { Chart, ChartOptions, ChartConfiguration } from 'chart.js/auto';
@@ -13,7 +14,7 @@ import { OfficeChartData } from 'src/app/services/charts-loader.service';
   templateUrl: './chart.component.html',
   styleUrls: ['./chart.component.scss'],
 })
-export class ChartComponent implements AfterViewInit {
+export class ChartComponent implements AfterViewInit, OnInit {
   @Input() chartData!: OfficeChartData;
 
   @ViewChild('myCanvas') myCanvas!: ElementRef;
@@ -62,12 +63,17 @@ export class ChartComponent implements AfterViewInit {
   }
 
   onKeyPress(event: KeyboardEvent) {
+    console.log(event);
     if (event.key === 'Escape' && this.fullscreen) {
       this.toggleFullscreen();
     }
   }
 
   constructor() {}
+
+  ngOnInit(): void {
+      window.addEventListener('keydown',this.onKeyPress);
+  }
 
   ngAfterViewInit(): void {
     this.createChart(this.chartData);
