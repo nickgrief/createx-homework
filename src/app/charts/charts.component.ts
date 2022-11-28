@@ -45,14 +45,14 @@ export class ChartsComponent implements OnInit {
     this.sumChart = true;
   }
 
-  constructor(private data: ChartsLoaderService) { }
+  constructor(private data: ChartsLoaderService) {}
 
   ngOnInit(): void {
-    this.data.getChartData().subscribe(data => {
+    this.data.getChartData().subscribe((data) => {
       this.maxPages = Math.floor(data.size / this.chartsNum) + 1;
       if (this.maxPages === 1) {
         this.lastPage = true;
       }
-    })
+    });
   }
 }

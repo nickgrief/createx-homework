@@ -72,7 +72,7 @@ export class ChartComponent implements AfterViewInit, OnInit {
   constructor() {}
 
   ngOnInit(): void {
-      window.addEventListener('keydown',this.onKeyPress);
+    window.addEventListener('keydown', this.onKeyPress);
   }
 
   ngAfterViewInit(): void {

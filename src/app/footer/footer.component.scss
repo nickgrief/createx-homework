@@ -9,7 +9,8 @@ footer {
   display: grid;
   gap: 80px;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  padding: 80px calc(calc(100vw - 1230px) / 2) 60px calc(calc(100vw - 1230px) / 2);
+  padding: 80px calc(calc(100vw - 1230px) / 2) 60px
+    calc(calc(100vw - 1230px) / 2);
 
   .about {
     font-size: 12px;

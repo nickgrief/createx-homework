@@ -1,5 +1,13 @@
 <div class="container" *ngIf="!sumChart && dataLoaded">
-  <div class="charts" *ngFor="let chart of chartsData.slice(chartsNum * page, chartsNum * page + chartsNum)">
+  <div
+    class="charts"
+    *ngFor="
+      let chart of chartsData.slice(
+        chartsNum * page,
+        chartsNum * page + chartsNum
+      )
+    "
+  >
     <app-chart [chartData]="chart[1]"></app-chart>
   </div>
 </div>

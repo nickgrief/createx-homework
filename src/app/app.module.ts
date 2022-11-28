@@ -64,7 +64,7 @@ const mapConfig: YaConfig = {
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [{provide: HOST_SERVICE, useClass: HostService}],
+  providers: [{ provide: HOST_SERVICE, useClass: HostService }],
   bootstrap: [AppComponent],
 })
 export class AppModule {
