@@ -27,6 +27,7 @@ import { BlogCardComponent } from './blog-card/blog-card.component';
 import { ChartsComponent } from './charts/charts.component';
 import { ChartComponent } from './charts/chart/chart.component';
 import { ChartPageComponent } from './charts/chart-page/chart-page.component';
+import { HostService, HOST_SERVICE } from './services/host.service';
 
 const mapConfig: YaConfig = {
   apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
@@ -63,7 +64,9 @@ const mapConfig: YaConfig = {
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [{provide: HOST_SERVICE, useClass: HostService}],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {
+  x = 3;
+}
