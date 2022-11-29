@@ -63,8 +63,7 @@ export class ChartComponent implements AfterViewInit, OnInit {
   }
 
   onKeyPress(event: KeyboardEvent) {
-    console.log(event);
-    if (event.key === 'Escape' && this.fullscreen) {
+    if (event.code === 'Escape' && this.fullscreen) {
       this.toggleFullscreen();
     }
   }
@@ -72,7 +71,9 @@ export class ChartComponent implements AfterViewInit, OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    window.addEventListener('keydown', this.onKeyPress);
+    window.addEventListener('keydown', (event) => {
+      this.onKeyPress(event);
+    });
   }
 
   ngAfterViewInit(): void {
