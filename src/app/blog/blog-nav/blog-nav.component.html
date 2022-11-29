@@ -1,0 +1,41 @@
+<nav>
+  <ul>
+    <li>
+      <a class="active">All</a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>description_outline</mat-icon>
+        <span>Articles</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>play_circle_outline</mat-icon>
+        <span>Videos</span>
+      </a>
+    </li>
+    <li>
+      <a>
+        <mat-icon>mic_outline</mat-icon>
+        <span>Poscasts</span>
+      </a>
+    </li>
+  </ul>
+  <div class="search">
+    <span>Blog category</span>
+    <mat-form-field class="form-field theme-selector" appearance="outline">
+      <mat-label>all themes</mat-label>
+      <mat-select>
+        <mat-option>Marketing</mat-option>
+        <mat-option>Development</mat-option>
+        <mat-option>Design</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>Search blog...</mat-label>
+      <input type="text" matInput />
+      <mat-icon color="primary" matSuffix>search</mat-icon>
+    </mat-form-field>
+  </div>
+</nav>

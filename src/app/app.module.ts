@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { MaterialModule } from './common/material.module';
 
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { AppRoutingModule } from './common/app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,6 +28,10 @@ import { ChartsComponent } from './charts/charts.component';
 import { ChartComponent } from './charts/chart/chart.component';
 import { ChartPageComponent } from './charts/chart-page/chart-page.component';
 import { HostService, HOST_SERVICE } from './services/host.service';
+import { BlogComponent } from './blog/blog.component';
+import { BlogGridComponent } from './blog/blog-grid/blog-grid.component';
+import { BlogNavComponent } from './blog/blog-nav/blog-nav.component';
+import { HeadersInterceptor } from './headers.interceptor';
 
 const mapConfig: YaConfig = {
   apikey: 'bbd1b3b0-17e8-4915-aa80-57bd9b05026f',
@@ -55,6 +59,9 @@ const mapConfig: YaConfig = {
     ChartsComponent,
     ChartComponent,
     ChartPageComponent,
+    BlogComponent,
+    BlogGridComponent,
+    BlogNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,7 +71,10 @@ const mapConfig: YaConfig = {
     BrowserAnimationsModule,
     HttpClientModule,
   ],
-  providers: [{ provide: HOST_SERVICE, useClass: HostService }],
+  providers: [
+    { provide: HOST_SERVICE, useClass: HostService },
+    { provide: HTTP_INTERCEPTORS, useClass: HeadersInterceptor, multi: true },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {
