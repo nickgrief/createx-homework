@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardData, CardDataService } from '../services/card-data.service';
 
 @Component({
   selector: 'app-our-blog',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./our-blog.component.scss'],
 })
 export class OurBlogComponent implements OnInit {
-  constructor() {}
+  cardsData!: CardData[];
+  constructor(private data: CardDataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.cardsData = this.data.ourBlogCardData;
+  }
 }

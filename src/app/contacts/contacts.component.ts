@@ -8,7 +8,9 @@ import { IconsService } from '../services/icons.service';
 })
 export class ContactsComponent implements OnInit {
   telephoneNumber = '(405) 555-0128';
-  telephoneLink = `tel:${this.telephoneNumber}`;
+  telephoneLink = `tel:4055550128`;
+
+  email = 'hello@createx.com';
 
   mapState: ymaps.IMapState = {
     type: 'yandex#hybrid',
@@ -24,7 +26,7 @@ export class ContactsComponent implements OnInit {
     'google',
   ];
 
-  constructor(private icons: IconsService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }

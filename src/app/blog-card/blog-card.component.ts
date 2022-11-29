@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { CardData } from '../services/card-data.service';
 
 @Component({
   selector: 'app-blog-card',
@@ -6,22 +7,18 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./blog-card.component.scss'],
 })
 export class BlogCardComponent implements OnInit {
-  @Input() typeIcon = 'mic';
-  @Input() typeName = 'Podcast';
-
-  @Input() imageSrc = 'assets/blog1.png';
-  @Input() imageAlt = 'Image of a snail racing';
-
-  @Input() category = 'Design';
-  @Input() date = 'July 28, 2020';
-  @Input() time?: string;
-
-  @Input() title =
-    'What are color profiles and how they work in graphic design';
-  @Input() content =
-    'Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...';
-
-  @Input() actionName = 'Listen';
+  @Input() cardData = <CardData>{
+    typeIcon: 'mic',
+    typeName: 'Podcast',
+    imageSrc: 'assets/blog1.png',
+    imageAlt: 'Image of a snail racing',
+    category: 'Design',
+    date: 'July 28, 2020',
+    title: 'What are color profiles and how they work in graphic design',
+    content:
+      'Aliquam vulputate hendrerit quam sollicitudin urna enim viverra gravida. Consectetur urna arcu eleifend...',
+    actionName: 'Listen',
+  };
 
   constructor() {}
 

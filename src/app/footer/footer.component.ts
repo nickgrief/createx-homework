@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
   telephoneNumber = '(405) 555-0128';
-  telephoneLink = `tel:${this.telephoneNumber}`;
+  telephoneLink = `tel:4055550128`;
+
+  email = 'hello@createx.com';
 
   iconList = [
     'facebook',

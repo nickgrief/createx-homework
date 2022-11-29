@@ -5,7 +5,7 @@ import { MaterialModule } from './common/material.module';
 
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AppRoutingModule } from './common/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { SignInComponent } from './sign-in/sign-in.component';

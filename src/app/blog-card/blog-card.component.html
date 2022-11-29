@@ -1,32 +1,37 @@
 <mat-card class="mat-elevation-z0">
   <div class="type-badge">
-    <mat-icon color="primary">{{ typeIcon }}</mat-icon>
-    <span>{{ typeName }}</span>
+    <mat-icon color="primary">{{ cardData.typeIcon }}</mat-icon>
+    <span>{{ cardData.typeName }}</span>
   </div>
-  <img colorful mat-card-xl-image src="{{ imageSrc }}" alt="{{ imageAlt }}" />
+  <img
+    colorful
+    mat-card-xl-image
+    [src]="cardData.imageSrc"
+    [alt]="cardData.imageAlt" />
 
   <div class="info">
-    <span class="category">{{ category }}</span>
+    <span class="category">{{ cardData.category }}</span>
     <span>|</span>
     <div class="date">
       <mat-icon color="primary">calendar_today</mat-icon>
-      <span>{{ date }}</span>
+      <span>{{ cardData.date }}</span>
     </div>
-    <span *ngIf="time">|</span>
-    <div *ngIf="time" class="time">
+    <span *ngIf="cardData.time">|</span>
+    <div *ngIf="cardData.time" class="time">
       <mat-icon color="primary">schedule</mat-icon>
-      <span>{{ time }}</span>
+      <span>{{ cardData.time }}</span>
     </div>
   </div>
-  <mat-card-title>{{ title }}</mat-card-title>
+  <mat-card-title>{{ cardData.title }}</mat-card-title>
   <mat-card-content>
     <p>
-      {{ content }}
+      {{ cardData.content }}
     </p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>
-      {{ actionName }} <mat-icon color="accent">arrow_right_alt</mat-icon>
+      {{ cardData.actionName }}
+      <mat-icon color="accent">arrow_right_alt</mat-icon>
     </button>
   </mat-card-actions>
 </mat-card>

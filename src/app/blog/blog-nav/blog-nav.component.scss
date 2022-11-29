@@ -21,7 +21,6 @@ nav {
         display: flex;
         align-items: center;
         padding: 10px 20px;
-
         gap: 8px;
       }
 
@@ -63,7 +62,6 @@ nav {
 .active {
   border: 1px solid #ff3f3a;
   border-radius: 4px;
-
   color: #ff3f3a;
 
   mat-icon {

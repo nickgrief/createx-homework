@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardData, CardDataService } from 'src/app/services/card-data.service';
 
 @Component({
   selector: 'app-blog-grid',
@@ -6,91 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./blog-grid.component.scss'],
 })
 export class BlogGridComponent implements OnInit {
-  blockCardsData = [
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-    {
-      typeIcon: 'mic',
-      typeName: 'Podcast',
-      imageSrc: 'assets/blog1.png',
-      imageAlt: 'Image of a snail racing',
-      category: 'Design',
-      date: 'July 28, 2020',
-      time: '20 min',
-    },
-  ];
+  blockCardData!: CardData[];
 
-  constructor() {}
+  constructor(private cardData: CardDataService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.blockCardData = this.cardData.blockCardsData;
+  }
 }

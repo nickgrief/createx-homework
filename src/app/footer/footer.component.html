@@ -46,7 +46,7 @@
         </li>
         <li>
           <img src="assets/mail.svg" alt="Mail icon" />
-          <a href="mailto:hello@createx.com">hello@createx.com</a>
+          <a [href]="'mailto:' + email">{{ email }}</a>
         </li>
       </ul>
     </div>
@@ -58,8 +58,7 @@
           name="E-mail"
           id="email-send"
           placeholder="Email adress"
-          required
-        />
+          required />
         <button type="submit" class="button-send-email">
           <img src="assets/right-arrow.svg" alt="Right arrow icon" />
         </button>

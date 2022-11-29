@@ -12,7 +12,7 @@ import { IconsService } from '../services/icons.service';
 export class ArticleComponent implements OnInit {
   iconList = ['facebook', 'twitter', 'linkedin'];
 
-  constructor(private icons: IconsService) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }

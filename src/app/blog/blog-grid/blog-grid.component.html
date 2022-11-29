@@ -2,16 +2,7 @@
   <div
     class="grid__card"
     [ngClass]="{ 'span-big': i === 3, 'span-small': i === 4 }"
-    *ngFor="let card of blockCardsData.slice(0, 8); index as i"
-  >
-    <app-blog-card
-      [typeIcon]="card.typeIcon"
-      [typeName]="card.typeName"
-      [imageSrc]="card.imageSrc"
-      [imageAlt]="card.imageAlt"
-      [category]="card.category"
-      [date]="card.date"
-      [time]="card.time"
-    ></app-blog-card>
+    *ngFor="let card of blockCardData.slice(0, 8); index as i">
+    <app-blog-card [cardData]="card"></app-blog-card>
   </div>
 </section>
